@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 - Git clone `https://github.com/mimipeshy/calculator-react.git`
 - Run `git checkout <branch-name>`
 - To start the dev server, run `npm start`
-- Explore the website 
+- Explore the website !!!
 
 
 ## Authors
