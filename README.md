@@ -1,39 +1,33 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Microverse-blueviolet) 
 
 # REACT CALCULATOR
 
-> This is a To Do List App using JavaScript and Webpack. With as goal learning how to apply Object Oriented Programming best practices.
-
-![screenshot](./screenshot.png)
-
+> I built a calculator for Math-magicians Inc using create-react-app, a tool built by developers at Facebook
 
 ## Built With
 
-- Javascript
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- npm
 - CSS
-- HTML
+- ES6
+
 
 ## Live Demo
 
-[Live Demo Link](https://mimipeshy.github.io/todolist-js/)
+[Live Demo Link](https://peris-calc.netlify.app/)
 
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-- Git clone https://github.com/mimipeshy/todolist-js.git
-- Open the index.html inside the dist folder with your favorite browser
-- Explore the website
-
-### Usage
-
-- Navigate through all projects in the navigation pane on the left-hand side
-- In the middle the currently selected project will be visible
-- A project can be deleted by clicking on the delete button
-- Click on the `+` below the Todo list to create a new todo
-- A todo can be updated by clicking on the modify button.
-- A todo can be marked as complete by clicking on the done button
+- Git clone `https://github.com/mimipeshy/calculator-react.git`
+- Run `git checkout <branch-name>`
+- To start the dev server, run `npm start`
+- Explore the website 
 
 
 ## Authors
