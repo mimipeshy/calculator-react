@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-function App() {
-  return (
-    <div className="App">
-      <p>Hello World</p>
-    </div>
-  );
-}
+import App from './components/App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <p>Hello World</p>,
+  <App />,
+
   document.getElementById('root'),
 );
