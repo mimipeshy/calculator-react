@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = props => (
+const Button = ({ buttonName }) => (
   <div>
     <button type="button">
-      {props.buttonName}
+      {buttonName}
     </button>
   </div>
 );
