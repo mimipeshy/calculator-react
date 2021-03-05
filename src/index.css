@@ -25,15 +25,11 @@ code {
     'Courier New',
     monospace;
 }
-.app-display{
+
+.app-display {
   color: red;
 }
 
 .app {
   text-align: center;
-}
-
-.group-one{
-  color: aqua;
-  size: 23vh;
 }
