@@ -33,26 +33,3 @@ code {
   text-align: center;
 }
 
-.buttonName{
-  color: brown;
-  padding: 12px;
-}
-.app-display{
-  background-color: black;
-  color: white;
-  text-align: right;
-  padding: 40px;
-  align-items: flex-end;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-}
-
-.buttons{
-  background:  #d6d3d3;
- display: inline-flex;
-   
-}
-
-.button-style{
-  color: red;
-}
