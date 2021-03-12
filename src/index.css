@@ -1,7 +1,5 @@
 body {
-  margin-bottom: 40px;
   margin: 0;
-  display: "inline-flex";
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -32,4 +30,3 @@ code {
 .app {
   text-align: center;
 }
-
