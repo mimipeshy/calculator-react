@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://peris-calc.netlify.app/)
+[Live Demo Link](https://stark-taiga-18224.herokuapp.com/)
 
 
 ## Getting Started
