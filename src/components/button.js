@@ -13,6 +13,7 @@ function Button(props) {
     <button onClick={() => handleClick(buttonName)} type="button" className={name}>
       { buttonName }
     </button>
+
   );
 }
 

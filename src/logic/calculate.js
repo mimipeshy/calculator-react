@@ -1,35 +1,57 @@
-import operate from './operate';
+import Operate from './operate';
 
-const calculate = (obj, buttonName) => {
-  if (!obj) { return false; }
-  let { total, next, operation } = obj;
+const Calculate = ((object, buttonName) => {
+  let { total, next, operation } = object;
+  const operator = /[X,+,÷,-]/;
+  total = total === 'Err div by 0' ? null : total;
   switch (buttonName) {
-    case '=':
-      return next ? operate(total, next, operation) : total;
     case 'AC':
       total = null;
       next = null;
       operation = null;
       break;
     case '+/-':
-      total *= -1;
-      next *= -1;
+      total = total == null ? total : Operate(total, -1, 'X');
+      next = next == null ? next : Operate(-1, next, 'X');
+      break;
+    case '%':
+      total = Operate(total, 100, '÷');
+      break;
+    case operator.test(buttonName) && buttonName:
+      if (operation && next) {
+        total = Operate(total, next, operation);
+      } else {
+        operation = buttonName;
+      }
       break;
     case '.':
-      if (total.includes('.')) {
-        return total;
+      if (operation) {
+        next = next ? `${next}.` : '0.';
+      } else {
+        total = total ? `${total}.` : '0.';
       }
-      total += buttonName;
-      return total;
-
-    case '÷': case 'x': case '+': case '-': case '%':
-      total = operate(total, next, operation);
+      break;
+    case '=':
+      if (operation && next) {
+        total = Operate(total, next, operation);
+        next = null;
+        operation = null;
+      }
       break;
     default:
-      total = null;
+      if (operation && total) {
+        next = next ? next + buttonName : buttonName;
+      } else {
+        total = total ? total + buttonName : buttonName;
+      }
       break;
   }
-  return total;
-};
 
-export default calculate;
+  return {
+    total,
+    next,
+    operation,
+  };
+});
+
+export default Calculate;

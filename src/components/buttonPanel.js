@@ -5,7 +5,7 @@ import Button from './button';
 function ButtonPanel(props) {
   const handleClick = (buttonName => props.clickHandler(buttonName));
   return (
-    <div className="buttons">
+    <div className="panel">
       <div className="group1">
         <Button key="AC" name="buttongroup1" clickHandler={handleClick} buttonName="AC" />
         <Button key="+/-" name="buttongroup1" clickHandler={handleClick} buttonName="+/-" />

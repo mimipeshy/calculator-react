@@ -1,33 +1,21 @@
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/destructuring-assignment */
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Display from './display';
 import ButtonPanel from './buttonPanel';
-import calculate from '../logic/calculate';
+import Calculate from '../logic/calculate';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+const App = () => {
+  const [state, setState] = useState('black');
 
-  handleClick=buttonName => {
-    this.setState(state => calculate(state, buttonName));
-  }
+  const handleClick = buttonName => {
+    const updateData = Calculate(state, buttonName);
+    setState(updateData);
+  };
+  return (
+    <div>
+      <Display amount={state.next || state.total || '0'} />
+      <ButtonPanel clickHandler={handleClick} />
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <div className="app">
-        <>
-          <Display result={this.state.next ? this.state.next : this.state.total} />
-          <ButtonPanel clickHandler={this.handleClick} />
-        </>
-      </div>
-
-    );
-  }
-}
+export default App;
