@@ -1,27 +1,20 @@
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/destructuring-assignment */
 import React, { useState } from 'react';
 import Display from './display';
 import ButtonPanel from './buttonPanel';
-import calculate from '../logic/calculate';
+import Calculate from '../logic/calculate';
 
 const App = () => {
-  const [state, setState] = useState({
-    total: null,
-    next: null,
-    operation: null,
-  });
+  const [state, setState] = useState('black');
+
   const handleClick = buttonName => {
-    setState(state => calculate(state, buttonName));
+    const updateData = Calculate(state, buttonName);
+    setState(updateData);
   };
   return (
-    <div className="app">
-      <>
-        <Display result={state.next ? state.next : state.total} />
-        <ButtonPanel clickHandler={handleClick} />
-      </>
+    <div>
+      <Display amount={state.next || state.total || '0'} />
+      <ButtonPanel clickHandler={handleClick} />
     </div>
-
   );
 };
 
