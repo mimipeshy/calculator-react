@@ -4,6 +4,9 @@
 
 > I built a calculator for Math-magicians Inc using create-react-app, a tool built by developers at Facebook
 
+![screenshot](./screeshot.png)
+
+
 ## Built With
 
 - Node.js
@@ -19,16 +22,21 @@
 
 [Live Demo Link](https://stark-taiga-18224.herokuapp.com/)
 
+## Prerequisites
+1. [Node](https://nodejs.org/en/)
+2. [Yarn](https://yarnpkg.com/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 - Git clone `https://github.com/mimipeshy/calculator-react.git`
-- Run `git checkout <branch-name>`
-- To start the dev server, run `npm start`
+- Run `yarn` to install the dependencies
+- To start the dev server, run `npm start` or `yarn start`
 - Explore the website 
 
+### How to run tests
+- To run tests you can simply run `yarn test` or `npm test` on your terminal
 
 ## Authors
 
@@ -42,7 +50,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/mimipeshy/calculator-react/issues).
 
 ## Show your support
 
