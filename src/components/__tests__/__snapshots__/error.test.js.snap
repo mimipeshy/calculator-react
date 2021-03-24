@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Tests if component renders correctly 1`] = `
+<p>
+  Page not found!
+</p>
+`;

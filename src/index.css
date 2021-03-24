@@ -1,32 +1,33 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: black;
-  width:100%;
+  width: 100%;
+
   /* margin:10px; */
-  
 }
 
-p{
+p {
   font-size: 18px;
   flex-wrap: wrap;
 }
 
-li{
+li {
   display: flex;
   list-style: none;
   float: right;
-   
 }
-a{
+
+a {
   margin-right: 40px;
 }
+
 .panel {
   width: 35%;
   margin: auto;
 }
 
 .display {
-  background-color:rgb(169,169,169);
+  background-color: rgb(169, 169, 169);
   color: white;
   width: 35%;
   height: 100px;
